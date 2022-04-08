@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost","root","","railway");
+$conn = mysqli_connect("https://sem8.herokuapp.com/register.php","root","","railway");
 if(!$conn){  
 	echo "<script type='text/javascript'>alert('Database failed');</script>";
   	die('Could not connect: '.mysqli_connect_error());  
